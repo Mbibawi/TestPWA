@@ -226,7 +226,7 @@ function showChildButtonsOrPrayers(btn, clear = true, click = true) {
     if (btn.afterShowPrayers)
         btn.afterShowPrayers();
     //Important ! : setCSSGridTemplate() MUST be called after btn.afterShowPrayres()
-    setCSSGridTemplate(containerDiv.querySelectorAll(".TargetRow")); //setting the number and width of the columns for each html element with class 'TargetRow'
+    //setCSSGridTemplate(containerDiv.querySelectorAll(".TargetRow")); //setting the number and width of the columns for each html element with class 'TargetRow'
     applyAmplifiedText(containerDiv.querySelectorAll("p[data-lang]"));
     if (btn.inlineBtns) {
         let newDiv = document.createElement("div");
